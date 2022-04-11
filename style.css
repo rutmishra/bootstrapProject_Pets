@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #6A8E7F;
+}
+.picture{
+   background: url("./media/cat.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;;
+}
+.main_content{
+    padding-top: 6.5em;
+    margin-bottom: 2em;
+}
+.main_font{
+    font-family: 'Courgette', cursive;
+}
+.sub_main_font{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 500;
+}
+.form_main{
+    width: 70%;
+}
+.text_margin{
+    margin-right: .8em;
+}
+
+.dogweight > div{
+    width: 24%;
+    border: 1px solid gray;
+}
+.dogweight > div > p{
+    margin-bottom: 0;
+}
+.dogbtn{
+    padding: 0;
+}
+
+.form-check-input{
+    padding: .75em;
+}
+
+.boxes{
+    width: 12em;
+}
+.boxes_heading{
+    font-size: small;
+}
+
+.item_box{
+    width: 31%;
+}
+.item_box1{
+    width: 48%;
+}
+.container_row_3 > div{
+    width: 30%;
+    background-color: aquamarine;
+}
+.container_row_3 > div>input{
+    width: 100%;
+}
+
+
+
+
+

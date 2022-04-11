@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Navigation Section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span id="logo">Pets</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item d-flex align-items-center">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i class="fa-solid fa-heart"></i>
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sign Up</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign In</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="fa-solid fa-circle-question"></i>
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="container-fluid picture">
+      <section class="main_writtings text-center text-white">
+        <div class="main_content">
+          <h1 class="main_font">
+            Loving pet care in your <br />
+            neighborhood™
+          </h1>
+          <h2 class="sub_main_font">Book trusted sitters and dog walkers.</h2>
+        </div>
+      </section>
+
+      <section class="container-fluid d-flex justify-content-center p-5">
+        <div class="form_main bg-white p-2">
+          <div class="d-flex px-3 py-3 bg-light align-items-center">
+            <p class="d-flex mb-0 h6 text_margin">I'm looking for service for my:</p>
+            <input type="checkbox" name="dog" id="dog" class="form-check-input"/><span class="mx-3">Dog</span>
+            <input type="checkbox" name="cat" id="cat" class="form-check-input"/><span class="mx-3">Cat</span>
+          </div>
+          <div class="d-flex justify-content-between bg-white px-3 py-1">
+            <div style="width: 60%;">
+              <p class= "h6">For When You're Away</p>
+            </div>
+            <div style="width: 38%;">
+              <p class="h6 d-flex">For When You're At Work</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between px-3">
+            <div class="d-flex justify-content-between" style="width: 60%;">
+              <div class="d-flex flex-column p-2 text-center item_box border border-secondary border-2">
+                <div class="d-flex justify-content-center">
+                <svg
+                  width="27"
+                  height="27"
+                    fill="#1B1F23"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M22 17v3a3 3 0 01-3 3h-2a3 3 0 01-3-3v-3h-3v2H9v-2H7a1 1 0 00-1 1v11a1 1 0 001 1h2v-9h2v9h14v-9h2v9h2a1 1 0 001-1V18a1 1 0 00-1-1h-2v2h-2v-2h-3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002zM7 15h22a3 3 0 013 3v11a3 3 0 01-3 3H7a3 3 0 01-3-3V18a3 3 0 013-3zm7-2h-2v-2a3 3 0 013-3h6a3 3 0 013 3v2h-2v-2a1 1 0 00-1-1h-6a1 1 0 00-1 1v2zm2 4v3a1 1 0 001 1h2a1 1 0 001-1v-3h-4z"
+                    ></path>
+                  </svg>
+                </div>
+                  <span class="boxes_heading">Boarding</span>
+              </div>
+              <div class="d-flex flex-column p-2 text-center item_box border border-secondary border-2">
+                <div class="d-flex justify-content-center ">
+                <svg
+                  width="27"
+                  height="27"
+                    fill="#1B1F23"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M23.026 12H23v-.024l-5-4.615-10 9.23V30h2v-3a4 4 0 118 0v3h10V16.592L23.026 12zM30 15.716l1.678 1.55a1 1 0 01-1.356 1.469L30 18.438V32H16v-5a2 2 0 00-4 0v5H6V18.438l-.322.297a1 1 0 01-1.356-1.47L18 4.64l5 4.615V8.5A1.5 1.5 0 0124.5 7h4A1.5 1.5 0 0130 8.5v7.216zm-2-1.846V9h-3v2.1l3 2.77zM21 21h2v-3h-2v3zm4 0h1v2h-8v-2h1v-3a2 2 0 012-2h2a2 2 0 012 2v3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002z"
+                    ></path>
+                  </svg>
+                </div>
+                  <span class="boxes_heading">House Sitting</span>
+              </div>
+              <div class="d-flex flex-column p-2 text-center item_box border border-secondary border-2">
+                <div class="d-flex justify-content-center">
+                  <svg
+                    width="27"
+                    height="27"
+                      fill="#1B1F23"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        d="M2.233 25.658a5.96 5.96 0 001.524 2.585 5.97 5.97 0 002.753 1.57 7.978 7.978 0 012.329-5.16 7.977 7.977 0 014.928-2.311 5.972 5.972 0 00-1.524-2.585 5.971 5.971 0 00-2.751-1.57 7.977 7.977 0 01-2.329 5.16 7.976 7.976 0 01-4.93 2.311zm-.224-1.988a5.978 5.978 0 003.74-1.737 5.979 5.979 0 001.749-3.912 5.976 5.976 0 00-3.74 1.736 5.977 5.977 0 00-1.749 3.913zm6.495 6.309a5.976 5.976 0 003.739-1.736 5.978 5.978 0 001.748-3.913 5.979 5.979 0 00-3.738 1.736 5.979 5.979 0 00-1.749 3.913zm9.296-3.984c.134-.66.2-1.332.2-2.004 3.56-.061 6.475-.453 8.593-1.075.927-.273 1.645-.577 2.105-.869.135-.086.236-.164.302-.227-.01-2.803-.26-5.852-.748-9.145C25.472 14.236 21.719 15 17 15c-2.115 0-4.036-.154-5.762-.464a10.002 10.002 0 00-2.042-.465c-1.28-.36-2.429-.824-3.448-1.396a79.247 79.247 0 00-.225 1.635 9.946 9.946 0 00-2.11.801c.153-1.357.349-2.757.588-4.198.027-1.567.781-3 1.999-3.914a5 5 0 015.505-4.974A5.989 5.989 0 0116 0a5.99 5.99 0 014.494 2.024 5.004 5.004 0 014.103 3.005 6 6 0 015.402 5.885c.517 3.118.834 6.04.95 8.767.68.535 1.051 1.143 1.051 1.819 0 2.758-6.188 4.393-14.2 4.495zm10.17-15.49A4 4 0 0024 7l-.101.001-.795.02-.198-.77A3.001 3.001 0 0020 4h-.5l-.3-.4A3.992 3.992 0 0016 2a3.993 3.993 0 00-3.263 1.686l-.39.548-.655-.154a3 3 0 00-3.667 3.308l.086.667-.586.332A3 3 0 006.04 10.51C8.51 12.157 12.16 13 17 13c4.846 0 8.5-.845 10.97-2.495zM13.657 29.657A8 8 0 112.343 18.343a8 8 0 0111.314 11.314zm-.708-20.09a1 1 0 01-1.898-.633c.851-2.553 3.061-3.437 6.191-2.654a1 1 0 11-.485 1.94c-2.202-.55-3.326-.101-3.808 1.346z"
+                      ></path>
+                    </svg>
+                </div>
+                  <span class="boxes_heading">Drop-In Visits</span>
+              </div>    
+            </div>
+            <div class="d-flex justify-content-between"  style="width: 38%;">
+              <div class="d-flex flex-column text-center  p-2 item_box1 border border-secondary border-2">
+                <div class="d-flex flex-column align-items-center">
+                  <svg width="27" height="27" fill="#1B1F23" viewBox="0 0 32 32">
+                    <path d="M4.888 26.54A11.965 11.965 0 014 22c0-6.627 5.373-12 12-12s12 5.373 12 12c0 .282-.01.563-.029.84 1.924.122 2.853.16 4.029.16v2c-1.412 0-2.465-.052-5.102-.224-5.038-.329-7.498-.329-10.734.21-1.907.318-3.13.726-5.705 1.78C6.389 28.43 4.153 29 0 29v-2c1.94 0 3.412-.13 4.888-.46zm21.087-3.826c.016-.236.025-.474.025-.714 0-5.523-4.477-10-10-10S6 16.477 6 22c0 1.42.296 2.772.83 3.996a44.245 44.245 0 002.871-1.081c2.705-1.107 4.042-1.553 6.135-1.901 3.19-.532 5.643-.57 10.139-.3zM16 0a1 1 0 011 1v6a1 1 0 11-2 0V1a1 1 0 011-1zm14.83 10.866a1 1 0 01-.366 1.366l-2.598 1.5a1 1 0 01-1-1.732l2.598-1.5a1 1 0 011.366.366zm-29.33 0a1 1 0 011.366-.366L5.464 12a1 1 0 11-1 1.732l-2.598-1.5a1 1 0 01-.366-1.366zm28.571-7.159a1 1 0 010 1.414l-4.95 4.95a1 1 0 01-1.414-1.414l4.95-4.95a1 1 0 011.414 0zm-28.253 0a1 1 0 011.414 0l4.95 4.95a1 1 0 01-1.414 1.414l-4.95-4.95a1 1 0 010-1.414zm20.048.793a1 1 0 01.366 1.366l-1 1.732a1 1 0 11-1.732-1l1-1.732a1 1 0 011.366-.366zm-12 0a1 1 0 011.366.366l1 1.732a1 1 0 01-1.732 1l-1-1.732A1 1 0 019.866 4.5zM30 15a1 1 0 110 2 1 1 0 010-2zM2 16a1 1 0 110 2 1 1 0 010-2z"></path>
+                  </svg>
+                  <span class = "boxes_heading">Doggy Day Care</span>
+                </div>
+              </div>
+              <div class="d-flex flex-column p-2 text-center item_box1 border border-secondary border-2">
+                <div class="d-flex flex-column align-items-center">
+                  <svg
+                  width="27"
+                  height="27"
+                    fill="#1B1F23"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      d="M23.026 12H23v-.024l-5-4.615-10 9.23V30h2v-3a4 4 0 118 0v3h10V16.592L23.026 12zM30 15.716l1.678 1.55a1 1 0 01-1.356 1.469L30 18.438V32H16v-5a2 2 0 00-4 0v5H6V18.438l-.322.297a1 1 0 01-1.356-1.47L18 4.64l5 4.615V8.5A1.5 1.5 0 0124.5 7h4A1.5 1.5 0 0130 8.5v7.216zm-2-1.846V9h-3v2.1l3 2.77zM21 21h2v-3h-2v3zm4 0h1v2h-8v-2h1v-3a2 2 0 012-2h2a2 2 0 012 2v3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002z"
+                    ></path>
+                  </svg>
+                  <span class="boxes_heading">Dog Walking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between px-3 py-3">
+            <div style="width: 65%;" class="d-flex justify-content-between">
+              <div style="width: 48%">
+                <p class="h6">Boarding near</p>
+                <input type="text" placeholder="Zip code or Address" class="p-1" style="width: 100%; text-indent: .3em;">
+              </div>
+              <div style="width: 48%">
+                <p class="h6">For these days</p>
+                <input type="date" class="p-1" style="width: 100%; text-indent: .3em;">
+              </div>
+            </div>
+            <div style="width: 35%;" class="d-flex justify-content-end">
+              <div style="width: 90%;" class="align-self-end d-flex">
+                <input type="date" class="p-1 justify-self-end" style="width: 100%;">
+              </div>
+            </div>
+          </div>
+
+          <div class="px-3">
+            <p class="h6">My Dog Size</p>
+          </div>
+          <div class="px-3 d-flex">
+            <div style="width: 68%;" class="d-flex justify-content-between dogweight">
+              <div class="d-flex flex-column align-items-center justify-content-center">
+                <p>Small</p>
+                <p>0 - 15 lbs</p>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center">
+                <p>Medium</p>
+                <p>16 -40 lbs</p>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center">
+                <p>Large</p>
+                <p>41 -100 lbs</p>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-center">
+                <p>Giant</p>
+                <p>101+ lbs</p>
+              </div>
+            </div>
+            <div style="width: 30%;" class="d-flex align-items-center justify-content-end dogbtn">
+              <button type="button" class="btn btn-primary rounded-pill" style="width: 95%; padding: 1em 0;">Search</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <section class="container-fluid p-5">
+      <p class="text-center fs-2" style="font-family: 'Courgette', cursive;">Services for every dog and cat</p>
+      <div class="d-flex justify-content-between" style="width: 80%; margin-left: 10%">
+        <div class="d-flex flex-column" style="width: 48%;">
+          <div class="d-flex">
+            <svg width="60" height="60" fill="#1B1F23" viewBox="0 0 32 32">
+              <path d="M22 17v3a3 3 0 01-3 3h-2a3 3 0 01-3-3v-3h-3v2H9v-2H7a1 1 0 00-1 1v11a1 1 0 001 1h2v-9h2v9h14v-9h2v9h2a1 1 0 001-1V18a1 1 0 00-1-1h-2v2h-2v-2h-3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002zM7 15h22a3 3 0 013 3v11a3 3 0 01-3 3H7a3 3 0 01-3-3V18a3 3 0 013-3zm7-2h-2v-2a3 3 0 013-3h6a3 3 0 013 3v2h-2v-2a1 1 0 00-1-1h-6a1 1 0 00-1 1v2zm2 4v3a1 1 0 001 1h2a1 1 0 001-1v-3h-4z"></path>
+            </svg>
+            <div class="d-flex flex-column" style="margin-left: 10px">
+              <span style="color: grey;"><b>Boarding</b></span>
+              <p>Your pets stay overnight in your sitter’s home. They’ll be treated like part of the family in a comfortable environment.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <svg width="60" height="60" fill="#1B1F23" viewBox="0 0 32 32">
+              <path d="M23.026 12H23v-.024l-5-4.615-10 9.23V30h2v-3a4 4 0 118 0v3h10V16.592L23.026 12zM30 15.716l1.678 1.55a1 1 0 01-1.356 1.469L30 18.438V32H16v-5a2 2 0 00-4 0v5H6V18.438l-.322.297a1 1 0 01-1.356-1.47L18 4.64l5 4.615V8.5A1.5 1.5 0 0124.5 7h4A1.5 1.5 0 0130 8.5v7.216zm-2-1.846V9h-3v2.1l3 2.77zM21 21h2v-3h-2v3zm4 0h1v2h-8v-2h1v-3a2 2 0 012-2h2a2 2 0 012 2v3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002z"></path>
+            </svg>
+            <div class="d-flex flex-column" style="margin-left: 10px">
+              <span style="color: grey;"><b>House Sitting</b></span>
+              <p>Your sitter takes care of your pets and your home. Your pets will get all the attention they need without leaving home.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <svg width="60" height="60" fill="#1B1F23" viewBox="0 0 32 32">
+              <path d="M2.233 25.658a5.96 5.96 0 001.524 2.585 5.97 5.97 0 002.753 1.57 7.978 7.978 0 012.329-5.16 7.977 7.977 0 014.928-2.311 5.972 5.972 0 00-1.524-2.585 5.971 5.971 0 00-2.751-1.57 7.977 7.977 0 01-2.329 5.16 7.976 7.976 0 01-4.93 2.311zm-.224-1.988a5.978 5.978 0 003.74-1.737 5.979 5.979 0 001.749-3.912 5.976 5.976 0 00-3.74 1.736 5.977 5.977 0 00-1.749 3.913zm6.495 6.309a5.976 5.976 0 003.739-1.736 5.978 5.978 0 001.748-3.913 5.979 5.979 0 00-3.738 1.736 5.979 5.979 0 00-1.749 3.913zm9.296-3.984c.134-.66.2-1.332.2-2.004 3.56-.061 6.475-.453 8.593-1.075.927-.273 1.645-.577 2.105-.869.135-.086.236-.164.302-.227-.01-2.803-.26-5.852-.748-9.145C25.472 14.236 21.719 15 17 15c-2.115 0-4.036-.154-5.762-.464a10.002 10.002 0 00-2.042-.465c-1.28-.36-2.429-.824-3.448-1.396a79.247 79.247 0 00-.225 1.635 9.946 9.946 0 00-2.11.801c.153-1.357.349-2.757.588-4.198.027-1.567.781-3 1.999-3.914a5 5 0 015.505-4.974A5.989 5.989 0 0116 0a5.99 5.99 0 014.494 2.024 5.004 5.004 0 014.103 3.005 6 6 0 015.402 5.885c.517 3.118.834 6.04.95 8.767.68.535 1.051 1.143 1.051 1.819 0 2.758-6.188 4.393-14.2 4.495zm10.17-15.49A4 4 0 0024 7l-.101.001-.795.02-.198-.77A3.001 3.001 0 0020 4h-.5l-.3-.4A3.992 3.992 0 0016 2a3.993 3.993 0 00-3.263 1.686l-.39.548-.655-.154a3 3 0 00-3.667 3.308l.086.667-.586.332A3 3 0 006.04 10.51C8.51 12.157 12.16 13 17 13c4.846 0 8.5-.845 10.97-2.495zM13.657 29.657A8 8 0 112.343 18.343a8 8 0 0111.314 11.314zm-.708-20.09a1 1 0 01-1.898-.633c.851-2.553 3.061-3.437 6.191-2.654a1 1 0 11-.485 1.94c-2.202-.55-3.326-.101-3.808 1.346z"></path>
+            </svg>
+            <div class="d-flex flex-column" style="margin-left: 10px">
+              <span style="color: grey;"><b>Dog Walking</b></span>
+              <p>Your dog gets a walk around your neighborhood. Perfect for busy days and dogs with extra energy to burn.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <svg width="60" height="60" fill="#1B1F23" viewBox="0 0 32 32">
+              <path d="M4.888 26.54A11.965 11.965 0 014 22c0-6.627 5.373-12 12-12s12 5.373 12 12c0 .282-.01.563-.029.84 1.924.122 2.853.16 4.029.16v2c-1.412 0-2.465-.052-5.102-.224-5.038-.329-7.498-.329-10.734.21-1.907.318-3.13.726-5.705 1.78C6.389 28.43 4.153 29 0 29v-2c1.94 0 3.412-.13 4.888-.46zm21.087-3.826c.016-.236.025-.474.025-.714 0-5.523-4.477-10-10-10S6 16.477 6 22c0 1.42.296 2.772.83 3.996a44.245 44.245 0 002.871-1.081c2.705-1.107 4.042-1.553 6.135-1.901 3.19-.532 5.643-.57 10.139-.3zM16 0a1 1 0 011 1v6a1 1 0 11-2 0V1a1 1 0 011-1zm14.83 10.866a1 1 0 01-.366 1.366l-2.598 1.5a1 1 0 01-1-1.732l2.598-1.5a1 1 0 011.366.366zm-29.33 0a1 1 0 011.366-.366L5.464 12a1 1 0 11-1 1.732l-2.598-1.5a1 1 0 01-.366-1.366zm28.571-7.159a1 1 0 010 1.414l-4.95 4.95a1 1 0 01-1.414-1.414l4.95-4.95a1 1 0 011.414 0zm-28.253 0a1 1 0 011.414 0l4.95 4.95a1 1 0 01-1.414 1.414l-4.95-4.95a1 1 0 010-1.414zm20.048.793a1 1 0 01.366 1.366l-1 1.732a1 1 0 11-1.732-1l1-1.732a1 1 0 011.366-.366zm-12 0a1 1 0 011.366.366l1 1.732a1 1 0 01-1.732 1l-1-1.732A1 1 0 019.866 4.5zM30 15a1 1 0 110 2 1 1 0 010-2zM2 16a1 1 0 110 2 1 1 0 010-2z"></path>
+            </svg>
+            <div class="d-flex flex-column" style="margin-left: 10px">
+              <span style="color: grey;"><b>Doggy Day Care</b></span>
+              <p>Your dog spends the day at your sitter’s home. Drop them off in the morning and pick up a happy pup in the evening.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <svg width="60" height="60" fill="#1B1F23" viewBox="0 0 32 32">
+              <path d="M23.026 12H23v-.024l-5-4.615-10 9.23V30h2v-3a4 4 0 118 0v3h10V16.592L23.026 12zM30 15.716l1.678 1.55a1 1 0 01-1.356 1.469L30 18.438V32H16v-5a2 2 0 00-4 0v5H6V18.438l-.322.297a1 1 0 01-1.356-1.47L18 4.64l5 4.615V8.5A1.5 1.5 0 0124.5 7h4A1.5 1.5 0 0130 8.5v7.216zm-2-1.846V9h-3v2.1l3 2.77zM21 21h2v-3h-2v3zm4 0h1v2h-8v-2h1v-3a2 2 0 012-2h2a2 2 0 012 2v3zM2.442 14C.81 14-.163 13.536.015 12.228c.05-.357.19-.676.459-1.153.017-.03.489-.836.631-1.099C1.676 8.924 1.97 8.01 1.97 7s-.293-1.924-.864-2.976c-.142-.263-.614-1.07-.631-1.1-.27-.476-.41-.795-.459-1.152C-.163.464.81 0 2.442 0c4.011 0 7 3.064 7 7s-2.989 7-7 7zm0-2c2.895 0 5-2.157 5-5s-2.105-5-5-5c-.068 0-.132 0-.19.002.115.198.477.82.612 1.069C3.579 4.39 3.969 5.606 3.969 7c0 1.394-.39 2.61-1.105 3.93-.135.249-.498.87-.613 1.068l.19.002z"></path>
+            </svg>
+            <div class="d-flex flex-column" style="margin-left: 10px">
+              <span style="color: grey;"><b>Drop-In Visits</b></span>
+              <p>Your sitter drops by your home to play with your pets, offer food, and give potty breaks or clean the litter box.</p>
+            </div>
+          </div>
+        </div>
+        <div style="width: 50%;">
+          <div class="border border-2">
+            <div class="d-flex align-items-center justify-content-center bg-light p-3">
+              <i class="fa-solid fa-shield-dog"></i>
+              <p style="margin-bottom: 0; margin-left: 2%" class="h6">Book with pet sitters you can <b>trust</b></p>
+            </div>
+            <div style="padding-bottom: .75em;">
+              <p style="margin-left: 2%;">
+                <i class="fa-solid fa-check" style="color: green;"></i>
+                All sitters pass a background check
+              </p>
+              <p style="margin-left: 2%;">
+                <i class="fa-solid fa-check" style="color: green;"></i>
+                All sitters provide a detailed profile and personal information
+              </p>
+              <p style="margin-left: 2%;">
+                <i class="fa-solid fa-check" style="color: green;"></i>
+                All sitters are approved by our team of sitter specialists
+              </p>
+              <button type="button" class="btn btn-primary rounded-pill" style="width: 90%; margin-left: 5%; padding: .75em 0">Book a local sitter</button>
+            </div>
+          </div>
+          <p style="font-size: .8rem; text-align:center; margin-top: .7em">All services booked on Rover are backed by the <span style="color:blue"><u>Rover Guarantee, 24/7 support,</u></span> and <span style="color:blue"><u>reservation protection</u></span>.</p>
+        </div>
+      </div> 
+    </section>
+
+    <section style="width: 80%; margin-left:10%" class="d-flex justify-content-between">
+      <div style="width: 49.5%;" class="d-flex flex-column">
+        <img src="./media/dog.jpg" class="img-fluid" alt="dog">
+        <div style="margin-top: -4em; width: 72%; margin-left: 14%;" class="border border-1">
+          <p class="p-5 h5 bg-light" style="margin-bottom: 0">
+            I was nervous to leave Sam with strangers, but my worries quickly faded. Going forward Rover will be my first choice for pet sitting.  <span style="color: gray;">– Molly S</span>.
+          </p>
+        </div>
+      </div>
+      <div style="width: 49.5%;" class="d-flex flex-column">
+        <img src="./media/cat1.jpg" class="img-fluid" alt="cat">
+        <div style="margin-top: -4em; width: 72%; margin-left: 14%;" class="border border-1">
+          <p class="p-5 h5 bg-light h5" style="margin-bottom: 0">
+            My sitter took great care of my cat, above and beyond my expectations. I would book with Rover again in a heartbeat!  <span style="color: gray">– Danielle H</span>.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section> 
+      <h3 style="font-family: 'Courgette', cursive;" class="text-center p-5">Meet local sitters who will treat your pets like family</h3>
+      <div class="d-flex text-center">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+            <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+            <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+          </svg>
+          <div class="p-3">
+            <h5>Search</h5>
+            <p>Read verified reviews by pet parents like you and choose a sitter who’s a great match for you and your pets.</p>
+          </div>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+          </svg>
+          <div class="p-3">
+            <h5>Book & pay</h5>
+            <p>No cash or checks needed—we make it simple to book and make secured payments through our website or app.</p>
+          </div>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.965 12.695a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2Zm-.8 3.108.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125ZM8 5.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+          </svg>
+          <div class="p-3">
+            <h5>Relax</h5>
+            <p>Your pets are in great hands with a loving sitter. Plus, your booking is backed by <span style="color: blue;"><u>24/7 support</u></span> and the <span style="color: blue;"><u>Rover Guarantee</u></span>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <p style="font-family: 'Courgette', cursive; margin-bottom: 1.5em" class="text-center h2">Connect anywhere with the Rover app</p>
+      <div class="d-flex justify-content-center">
+        <img src="https://www.rover.com/static/new_design/images/homepage/app-showcase-phones/app-showcase-en-us@1x.a8e7de64dc7f.png" class="img-fluid" alt="mob-image">
+      </div>
+      <hr style="width: 50%; margin-left: 25%">
+      <p class="text-center h6" style="color: gray;">Available on iOS and Android</p>
+      <div class="d-flex justify-content-between" style="width: 20%; margin-left: 40%">
+        <img src="https://www.rover.com/static/new_design/images/store-button/ios/en-us.2928664fe1fc.svg" height="40" alt="Download on the App Store Badge" aria-label="Download on the App Store">
+        <img src="https://www.rover.com/static/new_design/images/store-button/android/en-us.25feaf957249.svg" height="40" alt="Get it on Google Play Badge" aria-label="Get it on Google Play">
+      </div>
+    </section>
+
+    <section class="container-fluid text-white" style="margin-top: 1em; background-color: #2f3138">
+      <div class="p-5">
+        <p style="font-size: 1.5rem;">Thousands of pet sitters across the United States 🇺🇸</p>
+        <div class="d-flex justify-content-between">
+          <div>
+            <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+              <li>Alabama</li>
+              <li>Alaska</li>
+              <li>Arizona</li>
+              <li>Arkansas</li>
+              <li>California</li>
+              <li>Colorado</li>
+              <li>Connecticut</li>
+              <li>Delaware</li>
+              <li>District of Columbia</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="text-white" style="list-style: none; background-color:#2f3138;padding:0;">
+              <li>Florida</li>
+              <li>Georgia</li>
+              <li>Hawaii</li>
+              <li>Idaho</li>
+              <li>Illinois</li>
+              <li>Indiana</li>
+              <li>Iowa</li>
+              <li>Kansas</li>
+              <li>Kentucky</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="text-white" style="list-style: none; background-color:#2f3138;padding:0;">
+              <li>Louisiana</li>
+              <li>Maine</li>
+              <li>Maryland</li>
+              <li>Massachusetts</li>
+              <li>Michigan</li>
+              <li>Minnesota</li>
+              <li>Mississippi</li>
+              <li>Missouri</li>
+              <li>Montana</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="text-white" style="list-style: none; background-color:#2f3138;padding:0;">
+              <li>Nebraska</li>
+              <li>Nevada</li>
+              <li>New Hampshire</li>
+              <li>New Jersey</li>
+              <li>New Mexico</li>
+              <li>New York</li>
+              <li>North Carolina</li>
+              <li>North Dakota</li>
+              <li>Ohio</li>
+            </ul>
+        </div>
+
+        <div>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138;padding:0;">
+            <li>Oklahoma</li>
+            <li>Oregon</li>
+            <li>Pennsylvania</li>
+            <li>Rhode Island</li>
+            <li>South Carolina</li>
+            <li>South Dakota</li>
+            <li>Tennessee</li>
+            <li>Texas</li>
+            <li>Utah</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138;padding:0;">
+            <li>Vermont</li>
+            <li>Virginia</li>
+            <li>Washington</li>
+            <li>West Virginia</li>
+            <li>Wisconsin</li>
+            <li>Wyoming</li>
+          </ul>
+        </div>
+
+        </div>
+        <p style="font-size: 1.5rem;">Trusted around the world</p>
+        <div class="d-flex justify-content-between">
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>Canada</li>
+            <li>Netherlands</li>
+          </ul>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>United Kingdom</li>
+            <li>Norway</li>
+          </ul>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>Germany</li>
+            <li>Sweden</li>
+          </ul>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>Spain</li>
+          </ul>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>France</li>
+          </ul>
+          <ul class="text-white" style="list-style: none; background-color:#2f3138; padding:0;">
+            <li>Itali</li>
+          </ul>
+        <img src="https://www.rover.com/static/images/index/globe_doodle.27ac007a4f80.svg" class="img-fluid" alt="globe-image" style="margin-top: -3em">
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid p-5 d-flex justify-content-between">
+      <div class="d-flex justify-content-between" style="width: 60%;">
+        <div>
+          <h5>Learn More</h5>
+          <ul style="list-style: none; padding-left:0">
+            <li>Read our blog</li>
+            <li>Rover Q&A Community</li>
+            <li>Rover Store</li>
+            <li>Rover Guarantee</li>
+            <li>Safety</li>
+          </ul>
+        </div>
+        <div>
+          <h5>About Rover</h5>
+          <div class="d-flex justify-content-between" style="width: 120%;">
+            <ul style="list-style: none; padding-left: 0">
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Accessibility</li>
+              <li>Get the App</li>
+              <li>Press</li>
+              <li>Careers</li>
+              <li>Investor Relations</li>
+            </ul>
+            <ul style="list-style: none; padding-left:0">
+              <li>Privecy Statement</li>
+              <li>Cookie Policy</li>
+              <li>CA- Do not Sell</li>
+              <li>My Info</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h5>Need Help?</h5>
+          <ul style="list-style: none; padding-left: 0">
+            <li>Help Center</li>
+          </ul>
+        </div>
+      </div>
+      <div style="width: 24%;">
+        <h5 style="margin-bottom: 1em;">Get cute puppies in your inbox</h5>
+        <div class="d-flex align-items-center" style="margin-bottom: 1em;">
+          <input type="email" placeholder="Email Address" class="p-1" style="width: 15em; margin-right: 1%"> 
+          <button type="button" class="btn btn-secondary rounded-pill" style="width: 7em;">submit</button>
+        </div>
+        <p style="font-size: .7rem;">By providing my e-mail address, I consent to receive marketing communications from Rover.com and its affiliates. <u>Privacy Policy</u></p>
+
+        <div class="d-flex">
+          <i class="fa-brands fa-facebook" style="margin-right: 1em;"></i>
+          <i class="fa-brands fa-instagram-square" style="margin-right: 1em;"></i>
+          <i class="fa-brands fa-twitter" style="margin-right: 1em;"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom script  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
